@@ -1,5 +1,6 @@
 package me.spiochu.algorytmy;
 
+import me.spiochu.algorytmy.ONP.ONP;
 import me.spiochu.algorytmy.Stos.StosTab;
 import me.spiochu.algorytmy.kolejka.KolejkaList;
 
@@ -8,9 +9,22 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        wywolajKolejkaList();
+
+        wywolajONP();
     }
 
+    public static void wywolajONP(){
+        Scanner scanner = new Scanner(System.in);
+        System.out.println("Podaj wyraażenie w ONP");
+        String wejscie = scanner.nextLine();
+        String[] dane = wejscie.split(" ");
+        if (dane.length <3){
+            System.out.println("podano zbyt mało elemenów");
+        }else {
+            new ONP().run(dane);
+        }
+
+    }
 
     public static void wywolajKolejkaList(){
         KolejkaList kolejkaList = new KolejkaList();
