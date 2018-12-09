@@ -1,4 +1,4 @@
-package me.spiochu.algorytmy;
+package me.spiochu.algorytmy.Stos;
 
 public class StosTab {
     private int tab[];

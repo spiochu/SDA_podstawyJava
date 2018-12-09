@@ -1,14 +1,33 @@
 package me.spiochu.algorytmy;
 
+import me.spiochu.algorytmy.Stos.StosTab;
+import me.spiochu.algorytmy.kolejka.KolejkaList;
+
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
+        wywolajKolejkaList();
+    }
 
-        wywolajStosTab();
 
+    public static void wywolajKolejkaList(){
+        KolejkaList kolejkaList = new KolejkaList();
+        kolejkaList.add(1);
+        kolejkaList.add(2);
+        kolejkaList.add(3);
+        System.out.println("peek:" +kolejkaList.peek());
 
+        kolejkaList.poll();
+        kolejkaList.poll();
+
+        kolejkaList.add(4);
+        kolejkaList.add(5);
+        System.out.println("poll" + kolejkaList.poll());
+        System.out.println("poll" + kolejkaList.poll());
+        System.out.println("poll" + kolejkaList.poll());
+        System.out.println("poll" + kolejkaList.poll());
     }
 
 

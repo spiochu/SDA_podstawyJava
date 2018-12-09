@@ -1,4 +1,4 @@
-package me.spiochu.algorytmy;
+package me.spiochu.algorytmy.Tblica;
 
 public class Tablice {
     public void elementyNaParzystychIndeksach(int[] tab){
