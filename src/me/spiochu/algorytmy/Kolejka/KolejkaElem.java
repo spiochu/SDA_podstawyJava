@@ -1,4 +1,4 @@
-package me.spiochu.algorytmy.kolejka;
+package me.spiochu.algorytmy.Kolejka;
 
 public class KolejkaElem {
     private int value;
