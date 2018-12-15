@@ -2,7 +2,7 @@ package me.spiochu.algorytmy;
 
 import me.spiochu.algorytmy.ONP.ONP;
 import me.spiochu.algorytmy.Stos.StosTab;
-import me.spiochu.algorytmy.kolejka.KolejkaList;
+import me.spiochu.algorytmy.Kolejka.KolejkaList;
 
 import java.util.Scanner;
 
