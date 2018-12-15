@@ -8,7 +8,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-        wywolajKolejkaList();
+        int i = 100;
+        int[] tab = new int[100];
+        for (int j = 0; j < i; j++) {
+            tab[j] = i;
+        }
+
     }
 
 
