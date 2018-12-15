@@ -1,5 +1,6 @@
 package me.spiochu.algorytmy;
 
+import me.spiochu.algorytmy.Lista.Lista;
 import me.spiochu.algorytmy.ONP.ONP;
 import me.spiochu.algorytmy.Stos.StosTab;
 import me.spiochu.algorytmy.Kolejka.KolejkaList;
@@ -10,9 +11,31 @@ public class Main {
 
     public static void main(String[] args) {
 
-        wywolajONP();
+        wywolajLista();
     }
 
+    public static  void  wywolajLista(){
+        Lista lista = new Lista();
+        lista.addFirst(3);
+        lista.addFirst(2);
+        lista.addFirst(1);
+        lista.show();
+        lista.showReverse();
+        lista.addLast(4);
+        lista.addLast(5);
+        lista.show();
+        lista.showReverse();
+        System.out.println(lista.peekFirst());
+        System.out.println(lista.peekLast());
+        lista.pollFirst();
+        lista.pollLast();
+        lista.show();
+
+        System.out.println("Czy na liscie znajduje sie wartosc 5 : " + lista.search(5));
+        System.out.println("Czy na liscie znajduje sie wartosc 3 : " + lista.search(3));
+        lista.delete(3);
+        lista.show();
+    }
     public static void wywolajONP(){
         Scanner scanner = new Scanner(System.in);
         System.out.println("Podaj wyraażenie w ONP");
